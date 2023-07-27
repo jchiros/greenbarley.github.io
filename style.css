@@ -833,18 +833,18 @@ body {
 
 #prod1 .pro li a {
     border-radius: 100px;
-    border: 2px solid  #a0785a;
+    border: 2px solid  #7FB77E;
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
     padding: 0 10px;
-    color: 	#8B4513;
+    color: 	#7FB77E;
     transition: 0.3s ease;
 }
 
 #prod1 .pro li a:hover{
-    background-color:  #a0785a;
-    color: 	#efdecd;
+    background-color:  #7A9D54;
+    color: 	#1a1a1a;
 }
 
 #banner{
