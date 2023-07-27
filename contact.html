@@ -59,23 +59,23 @@
 </section>
 
 <section id="form-details">
-    <form action="">
+    <form method="POST" action="https://script.google.com/macros/s/AKfycbzIRT21OH5e7FYXrM2cgQoHuNGKyduDONlJTEBVpesm7ZGIeNX0rqd8bjyyGSTfIpgr/exec">
         <h2>Share your own testimony!</h2>
-        <input type="text" placeholder="Your Name">
+        <input name="Name" type="text" placeholder="Your Name" required>
         <h3>Type of Customer:</h3>
         <div class="radio-group">
-            <label><input type="radio" name="customer-type" value="first"> First Time Customer</label>
-            <label><input type="radio" name="customer-type" value="old"> Old Customer</label>
+            <label><input type="radio" name="customer-type" value="first time"> First Time Customer</label>
+            <label><input type="radio" name="customer-type" value="old customer"> Old Customer</label>
         </div>
         <h3>Product/s Bought:</h3>
         <div class="checkbox-group">
-            <label><input type="checkbox" name="checkbox1" value="checkbox1"> Product 1</label>
-            <label><input type="checkbox" name="checkbox2" value="checkbox2"> Product 2</label>
-            <label><input type="checkbox" name="checkbox3" value="checkbox3"> Product 3</label>
-            <label><input type="checkbox" name="checkbox4" value="checkbox4"> Product 4</label>
+            <label><input type="checkbox" name="product" value="checkbox1"> Product 1</label>
+            <label><input type="checkbox" name="product" value="checkbox2"> Product 2</label>
+            <label><input type="checkbox" name="product" value="checkbox3"> Product 3</label>
+            <label><input type="checkbox" name="product" value="checkbox4"> Product 4</label>
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Testimony"></textarea>
-        <button normal>Submit</button>
+        <textarea name="testimony" id="" cols="30" rows="10" placeholder="Your Testimony"></textarea>
+        <button type="submit">Submit</button>
     </form>    
 
     <div class="people">
