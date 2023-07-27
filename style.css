@@ -182,9 +182,9 @@ body {
 #hero {
     background-image: url("newimage/homepage.jpg"); 
     height: 100vh;
-    width: 50%;
+    width: 100vh;
     background-size: cover;
-    background-position: 100% 50%;
+    background-position: 100% 100%;
     padding: 0 80px;
     display: flex;
     flex-direction: column;
