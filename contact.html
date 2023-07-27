@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/a6dec88cae.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> 
+    
 </head>
 
 <body>
@@ -23,7 +24,7 @@
                 <li><a class ="active"  href="contact.html">Contact</a></li>
                 <!-- <li id="lg-bag"><a href="basket.html"><i class="fa-solid fa-basket-shopping"></i></i></i></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></i></a> -->
-                <li><a href="account.html"><i class="fa-solid fa-user"></i></i></i></a></li>
+                <!-- <li><a href="account.html"><i class="fa-solid fa-user"></i></i></i></a></li> -->
             </ul>
         <div id="mobile">
             <a href="basket.html"><i class="fa-solid fa-basket-shopping"></i></i></i></a>
@@ -33,60 +34,58 @@
 
     <section id="page-contactabout">
         <div class>
-        <h2>Let's converse</h2>
-        <h3>We'd love to hear your thoughts.</h3>
+        <h2>Testimonials</h2>
+        <!-- <h3>We'd love to hear your thoughts.</h3>  -->
     </div>
     </section>
 
 <section id="contact-details" class="section-p1">
-    <div class="details">
-      <span>Our contact information</span>  
-      <h2>Get in touch with us.</h2>
-      <h3>Follow us</h3>
-      <div>
-        <li>
-            <i class="fa-solid fa-map-location-dot"></i>
-            <p>Warehouse: 4118 Silang, Cavite</p>
-        </li>  
-        <li>
-            <i class="fa-regular fa-envelope"></i>
-            <p>mnml.tee2022@gmail.com</p>
-        </li>  
-        <li>
-            <i class="fa-solid fa-phone"></i>
-            <p>+69 2727 531</p>
-        </li>  
-      </div>
+    <div class="details" id="testimonials">
+        <img src="newimage/testimonials.png" alt="" width="600" height="500" style="border:0;" >
+        <script>
+            var options = {
+                width: 500,
+                height: 500,
+                zoomWidth: 400,
+                offset: {vertical: 0, horizontal: 10},
+                scale: 1.0,
+            }
+            new ImageZoom(document.getElementById("testimonials"), options);
+        </script>  
     </div>
-
     <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3867.8332612766485!2d121.0121137269531!3d14.204539500000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd7c6dd7ed969f%3A0x8ba134f75848a023!2sRANCHO%20IMPERIAL%20DE%20SILANG%20(Basketball%20Court)!5e0!3m2!1sen!2sph!4v1654352508339!5m2!1sen!2sph" 
-        width="600" height="450" style="border:0;" 
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <img src="newimage/testimonials2.png" alt="" width="600" height="500" style="border:0;" >
     </div>
 </section>
 
 <section id="form-details">
     <form action="">
-        <!-- <span>Leave us a message</span> -->
-        <h2>Share your thoughts</h2>
+        <h2>Share your own testimony!</h2>
         <input type="text" placeholder="Your Name">
-        <input type="text" placeholder="E-mail">
-        <input type="text" placeholder="Subject">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <h3>Type of Customer:</h3>
+        <div class="radio-group">
+            <label><input type="radio" name="customer-type" value="first"> First Time Customer</label>
+            <label><input type="radio" name="customer-type" value="old"> Old Customer</label>
+        </div>
+        <h3>Product/s Bought:</h3>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="checkbox1" value="checkbox1"> Product 1</label>
+            <label><input type="checkbox" name="checkbox2" value="checkbox2"> Product 2</label>
+            <label><input type="checkbox" name="checkbox3" value="checkbox3"> Product 3</label>
+            <label><input type="checkbox" name="checkbox4" value="checkbox4"> Product 4</label>
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Testimony"></textarea>
         <button normal>Submit</button>
-    </form>
+    </form>    
 
     <div class="people">
         <div>
-            <img src="img/jhas-modified.png" height="100px" width="100px" alt="">
-            <p><span>Jhaslyn Gerochi</span>Owner <br> Phone: +6392373462
-            <br>E-mail: jgerochi@gmail.com</p>
+            <img src="newimage/banner6.jpg" height="100px" width="100px" alt="">
+            <p><span>Health Wealth</span>Manufacturer <br>
         </div>
         <div>
-            <img src="img/trihsa-modified.png" height="100px" width="100px" alt="">
-            <p><span>Trisha Nicole Dela Cruz</span>Owner <br> Phone: +63934373462
-            <br>E-mail: trishadelacruz@gmail.com</p>
+            <img src="newimage/logo.jpg" height="100px" width="100px" alt="">
+            <p><span>Green Barley</span>Product <br> 
         </div>
     </div>
 </section>
