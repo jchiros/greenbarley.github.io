@@ -55,8 +55,8 @@ button.normal{
     font-size: 14px;
     font-weight: 600;
     padding: 15px 30px;
-    color: #7FB77E;
-    border: 3px solid #7FB77E;
+    color: #282b28;
+    border: 3px solid #282b28;
     background-color: transparent;
     border-radius: 4px;
     cursor: pointer;
@@ -180,35 +180,40 @@ body {
 
 /* HOME PAGE */
 #hero {
-    background-image: url("newimage/homepage.jpg"); 
-    height: 100vh;
-    width: 100vh;
+    background-image: url("newimage/header1.jpg"); 
+    height: 70vh;
+    width: 100%; /* Set the width to 100% to make it fit the site */
     background-size: cover;
-    background-position: 100% 100%;
-    padding: 0 80px;
+    background-position: right center;
+    position: relative;
+    padding: 0 80px; /* Adjust the padding as needed for spacing */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    
 }
 
 #hero h4 {
     padding-bottom: 15px ;
+    background-color: rgba(166, 252, 149, 0.438);
+
 }
 
 #hero h1 {
     color: #1a1a1a;
+    background-color: rgba(166, 252, 149, 0.438);
 }
 #hero h3 {
     font-family: arial,sans-serif;
     font-style: italic;
+    background-color: rgba(166, 252, 149, 0.438);
 }
 
 #hero p {
     color: #1a1a1a;
     font-size: 20px;
     font-weight: 1000;
+    background-color: rgba(166, 252, 149, 0.438);
 }
 
 #hero button {
@@ -948,7 +953,7 @@ body {
     justify-content: space-between;
     flex-wrap:wrap;
     align-items: center;
-    background-image: url("newimage/footer1.jpg");
+    background-image: url("newimage/home2.png");
     background-position: 100% 100%;
     background-repeat: repeat;
     background-color: #ccc5b9;
@@ -967,7 +972,7 @@ body {
 }
 
 #newsletter p span{
-    color: 	#7A9D54;
+    color: 	#07be07;
 }
 
 #newsletter .form{
@@ -1004,7 +1009,7 @@ body {
 
 /* STORE PAGE */
 #page-header{
-    background-image: url("img/pageheader7.jpg");
+    background-image: url("newimage/header2.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -1137,7 +1142,7 @@ body {
 
 /* ABOUT SECTION */
 #page-headerabout{
-    background-image: url("img/about5.jpg");
+    background-image: url("newimage/header2.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -1149,11 +1154,11 @@ body {
 }
 
 #page-headerabout h2{
-    text-align: right;
+    text-align: center;
 }
 
 #page-headerabout h3{
-    text-align: right;
+    text-align: center;
     position: relative;
     left: -155px;
 }
@@ -1172,6 +1177,35 @@ body {
     padding-left: 40px;
 }
 
+.box {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    min-height: 300px;
+}
+
+.info1 {
+    flex: 1; 
+    padding: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.info2 {
+    flex: 1; /* Take up available space on the right */
+    padding: 0 20px; /* Adjust padding on the left and right to make the border fit better */
+    overflow: hidden;
+    display: flex; /* Use flexbox to align image and audio vertically */
+    flex-direction: column; /* Align image and audio vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.info2 img {
+    max-width: 100%; /* Make sure the image scales properly */
+    display: block; /* Remove extra space below the image */
+    margin: 0; /* Remove any margin around the image */
+}
+
 /* CONTACT PAGE */
 #page-contactabout{
     /* background-image: url("newimage/banner2.jpg"); */
@@ -1183,6 +1217,19 @@ body {
     text-align: center;
     flex-direction: column;
     padding: 10px;
+}
+
+.picture-container {
+    display: flex;
+    justify-content: center; /* Align images horizontally in the center */
+}
+
+.picture-container img {
+    width: 400px; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+    border: 5px solid #7A9D54; /* Add a border with 2px width and #ccc color */
+    border-radius: 5px; /* Add rounded corners to the border */
+    margin: 10px; /* Add some margin between the images */
 }
 
 #page-contactabout h2{
@@ -1401,8 +1448,8 @@ div {
 }
 
 #prodetails .single-pro-details button:hover {
-    color: #1a1a1a;
-    background-color: #557A46;
+    color: #fdfdfd;
+    background-color:#67ad52;
 }
 
 #prodetails .single-pro-details input:focus{
